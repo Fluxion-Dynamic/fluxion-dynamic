@@ -1,4 +1,4 @@
-# fluxion-dynamic Official Gateway to Public
+# Fluxion Dynamic: Official Gateway to Public
 
 
 AI based Drones: https://www.fluxiondynamic.com
