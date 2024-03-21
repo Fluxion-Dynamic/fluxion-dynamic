@@ -300,7 +300,7 @@ html {
 
 .inspect-drone {
   height: 100vh;
-  background-image: url(https://media.giphy.com/media/xUA7aW1ddSxtVT5zzi/giphy-downsized-large.gif),    linear-gradient(-45deg, #542361, #003b8f);
+  /* background-image: url(https://media.giphy.com/media/xUA7aW1ddSxtVT5zzi/giphy-downsized-large.gif),    linear-gradient(-45deg, #542361, #003b8f); */
   background-size: cover;
   background-position: 50% 0;
   background-repeat: no-repeat;
