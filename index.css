@@ -94,9 +94,6 @@ header {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 100%;
-  height: 100vh;
-  background: #0d0d0d;
 }
 
 .title {
@@ -107,6 +104,8 @@ header {
   padding: 2rem;
   max-width: 960px;
   text-align: center;
+  position: absolute;
+  top: 36vh;
 }
 
 .title h1 {
@@ -158,13 +157,12 @@ header {
 
 #about {
   background-image: url(https://keshav2136.github.io/drones/prototype/drone.png);
-  background-color: #e5e5e5;
-  background-repeat: no-repeat;
   background-size: 100vw 50vw;
   background-position: center;
   /* padding-top: 96px; */
   padding-bottom: 66px;
   overflow: hidden;
+  /* margin-top: 50px; */
 }
 
 #about h1 {
@@ -301,12 +299,12 @@ html {
 }
 
 .inspect-drone {
-  height: 90vh;
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/46992/urban-8.png),
-    linear-gradient(-45deg, #542361, #003b8f);
+  height: 100vh;
+  background-image: url(https://media.giphy.com/media/xUA7aW1ddSxtVT5zzi/giphy-downsized-large.gif),    linear-gradient(-45deg, #542361, #003b8f);
   background-size: cover;
   background-position: 50% 0;
   background-repeat: no-repeat;
+  background-color: #9100ff;
 }
 
 div[class*="el-3d"] {
@@ -1106,7 +1104,7 @@ body {
   max-width: 100vw;
   margin: 0 auto;
   padding: 5vw 6vw;
-  background: white;
+  background: whitesmoke;
 }
 
 .row-unique {
@@ -1210,6 +1208,18 @@ svg#drone {
 
 
 #company-name{
-  color:rgb(76 136 254);
+  color: #9100ff;
   font-family: helvetica-otf;
 }
+
+
+
+
+
+/* Experimental */
+
+/*
+.inspect-drone {
+    background-image: url(https://media1.giphy.com/media/TZf4ZyXb0lXXi/giphy.gif), #9100ff;
+}
+*/
