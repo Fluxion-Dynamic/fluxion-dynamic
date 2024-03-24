@@ -4,8 +4,8 @@
   font-family: helvetica-otf;
   src: url(index/sans-oblique.otf);
 }
-body {
-  background: #fff;
+html, body {
+  background: #f7f7f7;
   font-family: "Playfair Display", serif;
   margin: 0;
 }
@@ -74,17 +74,6 @@ img {
   height: auto;
 }
 
-#leftmargin {
-  /* margin: 0 0 0 5vw; */
-  color: #f37700;
-}
-
-#bgwhite {
-  background-color: #fff;
-  margin: 10vw;
-  padding: 2vw;
-}
-
 header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -143,16 +132,6 @@ header {
   .title p {
     font-size: 20px;
   }
-}
-
-#woman-heading {
-  color: #e10048;
-  padding: 0;
-  margin: 0;
-}
-
-#traf-heading {
-  color: #0046d6;
 }
 
 #about {
@@ -241,48 +220,10 @@ header {
   bottom: 0;
 }
 
-.content {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  text-align: center;
-}
-
-.content h2 {
-  margin: 0 auto;
-  width: 50%;
-  text-align: center;
-  color: #ee6a5b;
-  line-height: 1.35em;
-  font-size: 46px;
-}
-
-.content p {
-  width: 50%;
-  text-align: center;
-  color: #ee6a5b;
-  text-transform: uppercase;
-  line-height: 1.75em;
-  letter-spacing: 5px;
-  padding-top: 30px;
-  font-size: 0.85em;
-  font-style: italic;
-  margin-top: 75px;
-  margin: 0 auto;
-  border-top-color: #1e1a1b;
-  border-top-width: 3px;
-  border-top-style: solid;
-}
-
 @media only screen and (max-width: 768px) {
   .content h2 {
     font-size: 28px;
   }
-}
-
-hr {
-  border: 3px solid #ee6a5b;
-  border-image: none;
 }
 
 *,
@@ -291,12 +232,6 @@ hr {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body,
-html {
-  /* width: 100%; */
-  /* height: 100%; */
 }
 
 .inspect-drone {
@@ -898,7 +833,6 @@ h5,
 h6 {
   margin: 0 0 20px 0;
   text-transform: none;
-  color: rgba(254, 82, 76, 1);
   font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
@@ -964,30 +898,6 @@ img {
   }
 }
 
-.text-unique > h2 {
-  color: #e10048;
-  font-size: 3vw;
-  position: relative;
-}
-
-section.police > img {
-  width: 100%;
-}
-.explain-text {
-  color: #7a7a7a;
-  font-family: "Roboto", sans-serif;
-}
-.videos {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-video {
-  width: 45vw;
-  padding: 1vw;
-}
-
 section.row.container.text-center {
   width: 90%;
   margin: 0 5vw;
@@ -1032,7 +942,10 @@ svg#drone {
   font-family: helvetica-otf;
 }
 
-
+#main-text-fl{
+  color: #949494;
+  font-size: 2.5rem;
+}
 
 #invisible-text1{
   visibility: hidden;
