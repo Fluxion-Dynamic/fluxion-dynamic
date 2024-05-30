@@ -4,10 +4,14 @@
   font-family: helvetica-otf;
   src: url(index/sans-oblique.otf);
 }
-html, body {
+html, body{
+  margin:0;
+  padding:0;
+}
+body {
   background: #f7f7f7;
+  color: #9a1ff8;
   font-family: "Playfair Display", serif;
-  margin: 0;
 }
 
 .row {
@@ -181,7 +185,7 @@ header {
   width: 100%;
   background-color: #fff;
   transform-origin: 0 0;
-  background-color: #9100ff;
+  background-color: #9a1ff8;
 }
 
 .ml1 .line1 {
@@ -823,7 +827,6 @@ a:hover {
 
 body {
   background-color: #f1f1f1;
-  overflow-y: scroll;
 }
 
 .container-unique {
@@ -910,7 +913,7 @@ svg#drone {
 
 
 #company-name{
-  color: #9100ff;
+  color: #9a1ff8;
   font-family: helvetica-otf;
 }
 
@@ -923,18 +926,18 @@ svg#drone {
   visibility: hidden;
   width: 0;
   height: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
-body, h3 .ml1, .text-wrapper, .letters, .line, .line1, .line2 {
+h3 .ml1, .text-wrapper, .letters, .line, .line1, .line2 {
   overflow: hidden;
-  color: #9100ff;
+  color: #9a1ff8;
 }
 
 /* Experimental */
 
 /*
 .inspect-drone {
-    background-image: url(https://media1.giphy.com/media/TZf4ZyXb0lXXi/giphy.gif), #9100ff;
+    background-image: url(https://media1.giphy.com/media/TZf4ZyXb0lXXi/giphy.gif), #9a1ff8;
 }
 */

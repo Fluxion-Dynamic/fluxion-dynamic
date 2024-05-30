@@ -11,7 +11,7 @@ div.middle-range {padding-top: 5vw; height: 100vh; }
 .nav-container { display: flex; justify-content: space-between; align-items: center; height: 62px; }
 .navbar .menu-items { display: flex; }
 .navbar .nav-container li { list-style: none; }
-.navbar .nav-container a { text-decoration: none; color: rgb(0, 0, 0); font-weight: 500; font-size: 1.2rem; padding: 0.7rem; }
+.navbar .nav-container a {text-decoration: none;color: rgb(0, 0, 0);font-weight: 500;font-size: 2.4rem;padding: 0.7rem;}
 .navbar .nav-container a:hover { font-weight: bolder; }
 .nav-container {display: block;position: relative;height: 60px;left: 0;right: 0;}
 .nav-container .checkbox {position: absolute;display: block;height: 32px;width: 32px;top: 18px;left: 85vw;z-index: 5;opacity: 0;cursor: pointer;}
@@ -43,7 +43,7 @@ div.middle-range {padding-top: 5vw; height: 100vh; }
 .logo { font-size: 1.2rem; color: rgb(14, 36, 49); }
 .nav-container input[type="checkbox"]:checked ~ .menu-items { transform: translateX(0px); }
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 { transform: rotate(45deg); }
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 { transform: scaleY(0); }width: 100vw;height: 100vh;padding: 24vh 0;
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 { transform: scaleY(0); }
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 { transform: rotate(-45deg); }
 .nav-container input[type="checkbox"]:checked ~ .logo { display: none; }
 @media (min-width: 700px) and (max-width: 2500px) {
@@ -59,7 +59,7 @@ div.middle-range { height: 100vh; }
 .nav-container { display: flex; justify-content: space-between; align-items: center; height: 62px; }
 .navbar .menu-items { display: flex; }
 .navbar .nav-container li { list-style: none; }
-.navbar .nav-container a { text-decoration: none; color: rgb(0, 0, 0); font-weight: 500; font-size: 1.2rem; padding: 0.7rem; }
+.navbar .nav-container a {text-decoration: none;color: rgb(0, 0, 0);font-weight: 500;padding: 0.7rem;}
 .navbar .nav-container a:hover { font-weight: bolder; }
 .nav-container {display: block;position: absolute;height: 60px;}
 .nav-container .checkbox {position: absolute;display: block;height: 32px;width: 32px;top: 18px;left: 74vw;z-index: 5;opacity: 0;cursor: pointer;}
