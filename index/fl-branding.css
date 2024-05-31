@@ -4,3 +4,9 @@
     height: 90vh;
     background-image: url( '/index/wavey-fingerprint\ \(blue\).svg' );
  }
+
+
+ #fl-branding h3{
+    color:#e4e4e4;
+    padding: 3rem 0;
+ }
