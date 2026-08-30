@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technology | Fluxion Dynamic Technologies</title>
+<meta name="title" content="Technology | Fluxion Dynamic Technologies">
+<meta name="description" content="Our technology stack: C++ embedded flight control, Java backend services, Python AI/ML pipelines, ROS2 autonomy, neural networks, computer vision, and graph pathfinding algorithms.">
+<meta name="keywords" content="Fluxion Dynamic Technologies, C++, Java, Python, ROS2, neural networks, computer vision, object avoidance, Dijkstra, A-star, pathfinding, UAV, embedded">
+<meta name="author" content="Fluxion Dynamic Technologies Pvt. Ltd.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://fluxiondynamic.com/technology.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fluxiondynamic.com/technology.html">
+<meta property="og:title" content="Technology | Fluxion Dynamic Technologies">
+<meta property="og:description" content="C++ embedded flight control, Java backend, Python AI/ML, ROS2 autonomy, neural networks, computer vision, and pathfinding algorithms.">
+<meta property="og:site_name" content="Fluxion Dynamic Technologies">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://fluxiondynamic.com/technology.html">
+<meta property="twitter:title" content="Technology | Fluxion Dynamic Technologies">
+<meta property="twitter:description" content="Our full technology stack for autonomous aerial systems.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9B%B8%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <a href="index.html" class="logo"><span class="logo-mark">FL</span><span>Fluxion Dynamic</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="technology.html" class="active">Technology</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <span class="eyebrow">Technology</span>
+      <h1>What Powers Our Systems</h1>
+      <p>Every layer of our stack is chosen for performance, reliability, and real-time constraints.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Languages & Runtime</span>
+        <h2>Core Stack</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card reveal">
+          <div class="card-header"><div class="card-icon" style="color:var(--code-cpp);border-color:rgba(92,138,158,0.25);">C++</div><div class="card-title">Flight Control & Embedded</div></div>
+          <div class="card-desc">Low-level autopilot logic, sensor fusion (EKF, complementary filters), and real-time control loops running on ARM Cortex-M4 and STM32 microcontrollers. We write bare-metal and FreeRTOS tasks for deterministic timing.</div>
+          <div style="margin-top:16px;font-family:var(--font-mono);font-size:0.7rem;color:var(--code-cpp);line-height:1.8;">
+            <span style="display:block;opacity:0.7;">class FlightController {</span>
+            <span style="display:block;opacity:0.5;padding-left:12px;">void updateAttitude();</span>
+            <span style="display:block;opacity:0.3;padding-left:12px;">float pid(0.01);</span>
+            <span style="display:block;opacity:0.7;">};</span>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-header"><div class="card-icon" style="color:var(--code-java);border-color:rgba(176,114,111,0.25);">JV</div><div class="card-title">Backend & Fleet Services</div></div>
+          <div class="card-desc">Mission orchestration, telemetry ingestion, and secure REST APIs for multi-vehicle fleet management. We use Java for its robust concurrency model and mature ecosystem in enterprise environments.</div>
+          <div style="margin-top:16px;font-family:var(--font-mono);font-size:0.7rem;color:var(--code-java);line-height:1.8;">
+            <span style="display:block;opacity:0.7;">public class FleetManager {</span>
+            <span style="display:block;opacity:0.5;padding-left:12px;">List&lt;UAV&gt; activeFleet;</span>
+            <span style="display:block;opacity:0.3;padding-left:12px;">TelemetryStream stream;</span>
+            <span style="display:block;opacity:0.7;">}</span>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-header"><div class="card-icon" style="color:var(--code-py);border-color:rgba(122,158,122,0.25);">PY</div><div class="card-title">AI / ML & Vision Pipelines</div></div>
+          <div class="card-desc">Neural network training, data preprocessing, and computer vision pipelines using PyTorch, OpenCV, and NumPy. We train on workstations and deploy quantized models to edge devices.</div>
+          <div style="margin-top:16px;font-family:var(--font-mono);font-size:0.7rem;color:var(--code-py);line-height:1.8;">
+            <span style="display:block;opacity:0.7;">def train(epochs=200):</span>
+            <span style="display:block;opacity:0.5;padding-left:12px;">model.fit(data, labels)</span>
+            <span style="display:block;opacity:0.3;padding-left:12px;">torch.save(checkpoint)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Autonomy & Intelligence</span>
+        <h2>Intelligence Layer</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card reveal">
+          <div class="card-header"><div class="card-icon" style="color:var(--ros);border-color:rgba(196,154,90,0.25);">R2</div><div class="card-title">ROS2 & Middleware</div></div>
+          <div class="card-desc">Node-based autonomy architecture with DDS communication, SLAM (RTAB-Map, ORB-SLAM3), and behavior trees for deterministic mission execution. We use Nav2 for path planning and Foxglove for visualization.</div>
+          <div style="margin-top:16px;height:50px;position:relative;">
+            <div style="position:absolute;height:1px;background:var(--border);left:10px;top:15px;width:40px;transform:rotate(-5deg);transform-origin:left;"></div>
+            <div style="position:absolute;height:1px;background:var(--border);left:55px;top:12px;width:35px;transform:rotate(10deg);transform-origin:left;"></div>
+            <div style="position:absolute;height:1px;background:var(--border);left:25px;top:35px;width:35px;transform:rotate(-5deg);transform-origin:left;"></div>
+            <div style="position:absolute;width:8px;height:8px;border-radius:50%;border:1px solid var(--ros);background:var(--bg-card);left:5px;top:10px;animation:ros-pulse 2s ease-in-out infinite;"></div>
+            <div style="position:absolute;width:8px;height:8px;border-radius:50%;border:1px solid var(--ros);background:var(--bg-card);left:50px;top:8px;animation:ros-pulse 2s ease-in-out infinite 0.3s;"></div>
+            <div style="position:absolute;width:8px;height:8px;border-radius:50%;border:1px solid var(--ros);background:var(--bg-card);left:90px;top:15px;animation:ros-pulse 2s ease-in-out infinite 0.6s;"></div>
+            <div style="position:absolute;width:8px;height:8px;border-radius:50%;border:1px solid var(--ros);background:var(--bg-card);left:20px;top:32px;animation:ros-pulse 2s ease-in-out infinite 0.9s;"></div>
+            <div style="position:absolute;width:8px;height:8px;border-radius:50%;border:1px solid var(--ros);background:var(--bg-card);left:60px;top:35px;animation:ros-pulse 2s ease-in-out infinite 1.2s;"></div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-header"><div class="card-icon" style="color:var(--nn);border-color:rgba(158,122,158,0.25);">NN</div><div class="card-title">Neural Networks</div></div>
+          <div class="card-desc">Deep learning models for object detection (YOLO, RT-DETR), semantic segmentation, and anomaly detection. Models are quantized to INT8 and deployed on Jetson Nano, Xavier NX, and Coral Edge TPU.</div>
+          <div style="margin-top:16px;height:50px;position:relative;">
+            <div style="position:absolute;width:1px;background:var(--border);opacity:0.5;left:14px;top:12px;height:35px;transform:rotate(22deg);transform-origin:top;"></div>
+            <div style="position:absolute;width:1px;background:var(--border);opacity:0.5;left:14px;top:30px;height:18px;transform:rotate(8deg);transform-origin:top;"></div>
+            <div style="position:absolute;width:1px;background:var(--border);opacity:0.5;left:54px;top:30px;height:18px;transform:rotate(-8deg);transform-origin:top;"></div>
+            <div style="position:absolute;width:1px;background:var(--border);opacity:0.5;left:54px;top:30px;height:35px;transform:rotate(-22deg);transform-origin:top;"></div>
+            <div style="position:absolute;width:7px;height:7px;border-radius:50%;background:var(--nn);opacity:0.3;animation:nn-fire 1.5s ease-in-out infinite;left:10px;top:8px;"></div>
+            <div style="position:absolute;width:7px;height:7px;border-radius:50%;background:var(--nn);opacity:0.3;animation:nn-fire 1.5s ease-in-out infinite 0.2s;left:10px;top:26px;"></div>
+            <div style="position:absolute;width:7px;height:7px;border-radius:50%;background:var(--nn);opacity:0.3;animation:nn-fire 1.5s ease-in-out infinite 0.4s;left:10px;top:44px;"></div>
+            <div style="position:absolute;width:7px;height:7px;border-radius:50%;background:var(--nn);opacity:0.3;animation:nn-fire 1.5s ease-in-out infinite 0.1s;left:50px;top:8px;"></div>
+            <div style="position:absolute;width:7px;height:7px;border-radius:50%;background:var(--nn);opacity:0.3;animation:nn-fire 1.5s ease-in-out infinite 0.3s;left:50px;top:26px;"></div>
+            <div style="position:absolute;width:7px;height:7px;border-radius:50%;background:var(--nn);opacity:0.3;animation:nn-fire 1.5s ease-in-out infinite 0.5s;left:50px;top:44px;"></div>
+            <div style="position:absolute;width:7px;height:7px;border-radius:50%;background:var(--nn);opacity:0.3;animation:nn-fire 1.5s ease-in-out infinite 0.2s;left:90px;top:8px;"></div>
+            <div style="position:absolute;width:7px;height:7px;border-radius:50%;background:var(--nn);opacity:0.3;animation:nn-fire 1.5s ease-in-out infinite 0.4s;left:90px;top:26px;"></div>
+            <div style="position:absolute;width:7px;height:7px;border-radius:50%;background:var(--nn);opacity:0.3;animation:nn-fire 1.5s ease-in-out infinite 0.6s;left:90px;top:44px;"></div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-header"><div class="card-icon" style="color:var(--vision);border-color:rgba(138,158,196,0.25);">CV</div><div class="card-title">Computer Vision</div></div>
+          <div class="card-desc">Real-time object tracking (DeepSORT, ByteTrack), optical flow, stereo depth estimation, and visual-inertial odometry for GPS-denied navigation. OpenCV and CUDA-accelerated pipelines.</div>
+          <div style="margin-top:16px;height:50px;position:relative;overflow:hidden;">
+            <div style="position:absolute;top:0;left:0;width:100%;height:2px;background:var(--vision);opacity:0.4;animation:scanline-move 2s linear infinite;"></div>
+            <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:3px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);">
+              <div style="width:9px;height:9px;border-radius:2px;background:var(--border);"></div>
+              <div style="width:9px;height:9px;border-radius:2px;background:var(--vision);animation:cv-flicker 1.2s ease-in-out infinite;"></div>
+              <div style="width:9px;height:9px;border-radius:2px;background:var(--border);"></div>
+              <div style="width:9px;height:9px;border-radius:2px;background:var(--border);"></div>
+              <div style="width:9px;height:9px;border-radius:2px;background:var(--vision);animation:cv-flicker 1.2s ease-in-out infinite 0.2s;"></div>
+              <div style="width:9px;height:9px;border-radius:2px;background:var(--border);"></div>
+              <div style="width:9px;height:9px;border-radius:2px;background:var(--vision);animation:cv-flicker 1.2s ease-in-out infinite 0.3s;"></div>
+              <div style="width:9px;height:9px;border-radius:2px;background:var(--border);"></div>
+              <div style="width:9px;height:9px;border-radius:2px;background:var(--border);"></div>
+              <div style="width:9px;height:9px;border-radius:2px;background:var(--vision);animation:cv-flicker 1.2s ease-in-out infinite 0.4s;"></div>
+              <div style="width:9px;height:9px;border-radius:2px;background:var(--border);"></div>
+              <div style="width:9px;height:9px;border-radius:2px;background:var(--border);"></div>
+              <div style="width:9px;height:9px;border-radius:2px;background:var(--border);"></div>
+              <div style="width:9px;height:9px;border-radius:2px;background:var(--vision);animation:cv-flicker 1.2s ease-in-out infinite 0.5s;"></div>
+              <div style="width:9px;height:9px;border-radius:2px;background:var(--border);"></div>
+              <div style="width:9px;height:9px;border-radius:2px;background:var(--border);"></div>
+              <div style="width:9px;height:9px;border-radius:2px;background:var(--border);"></div>
+              <div style="width:9px;height:9px;border-radius:2px;background:var(--vision);animation:cv-flicker 1.2s ease-in-out infinite 0.6s;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Algorithms</span>
+        <h2>Pathfinding & Decision Making</h2>
+      </div>
+      <div class="grid-2">
+        <div class="card reveal">
+          <div class="card-header"><div class="card-icon" style="color:var(--path);border-color:rgba(122,158,122,0.25);">AL</div><div class="card-title">Graph-Based Pathfinding</div></div>
+          <div class="card-desc">Dijkstra and A-star for global path planning. Probabilistic Roadmaps (PRM) and Rapidly-exploring Random Trees (RRT) for high-dimensional configuration spaces. We also implement custom heuristics for UAV-specific constraints like battery range and no-fly zones.</div>
+          <div style="margin-top:16px;height:50px;position:relative;">
+            <div style="display:grid;grid-template-columns:repeat(8,1fr);gap:2px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:100px;">
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--text-dim);"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--text-dim);"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--text-dim);"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--text-dim);"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--text-dim);"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--text-dim);"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--text-dim);"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--text-dim);"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--text-dim);"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--accent);"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--path);animation:path-glow 1.5s ease-in-out infinite;"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--path);animation:path-glow 1.5s ease-in-out infinite 0.15s;"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--path);animation:path-glow 1.5s ease-in-out infinite 0.3s;"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--path);animation:path-glow 1.5s ease-in-out infinite 0.45s;"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--path);animation:path-glow 1.5s ease-in-out infinite 0.6s;"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--text-dim);"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--text-dim);"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--text-dim);"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--text-dim);"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--text-dim);"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--text-dim);"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--text-dim);"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--text-dim);"></div>
+              <div style="width:10px;height:10px;border-radius:1px;background:var(--text-dim);"></div>
+            </div>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="card-header"><div class="card-icon" style="color:var(--vision);border-color:rgba(138,158,196,0.25);">OA</div><div class="card-title">Object Avoidance</div></div>
+          <div class="card-desc">Multi-sensor fusion for obstacle detection: 2D LiDAR, depth cameras (Intel RealSense, OAK-D), and ultrasonic arrays. Reactive trajectory replanning using potential fields and dynamic window approach (DWA) for real-time collision avoidance.</div>
+          <div style="margin-top:16px;height:50px;position:relative;">
+            <div style="position:absolute;width:1px;background:var(--border);opacity:0.5;left:14px;top:12px;height:35px;transform:rotate(22deg);transform-origin:top;"></div>
+            <div style="position:absolute;width:1px;background:var(--border);opacity:0.5;left:14px;top:30px;height:18px;transform:rotate(8deg);transform-origin:top;"></div>
+            <div style="position:absolute;width:1px;background:var(--border);opacity:0.5;left:54px;top:30px;height:18px;transform:rotate(-8deg);transform-origin:top;"></div>
+            <div style="position:absolute;width:1px;background:var(--border);opacity:0.5;left:54px;top:30px;height:35px;transform:rotate(-22deg);transform-origin:top;"></div>
+            <div style="position:absolute;width:7px;height:7px;border-radius:50%;background:var(--vision);opacity:0.3;animation:nn-fire 1.5s ease-in-out infinite;left:10px;top:8px;"></div>
+            <div style="position:absolute;width:7px;height:7px;border-radius:50%;background:var(--vision);opacity:0.3;animation:nn-fire 1.5s ease-in-out infinite 0.2s;left:10px;top:26px;"></div>
+            <div style="position:absolute;width:7px;height:7px;border-radius:50%;background:var(--vision);opacity:0.3;animation:nn-fire 1.5s ease-in-out infinite 0.4s;left:10px;top:44px;"></div>
+            <div style="position:absolute;width:7px;height:7px;border-radius:50%;background:var(--vision);opacity:0.3;animation:nn-fire 1.5s ease-in-out infinite 0.1s;left:50px;top:8px;"></div>
+            <div style="position:absolute;width:7px;height:7px;border-radius:50%;background:var(--vision);opacity:0.3;animation:nn-fire 1.5s ease-in-out infinite 0.3s;left:50px;top:26px;"></div>
+            <div style="position:absolute;width:7px;height:7px;border-radius:50%;background:var(--vision);opacity:0.3;animation:nn-fire 1.5s ease-in-out infinite 0.5s;left:50px;top:44px;"></div>
+            <div style="position:absolute;width:7px;height:7px;border-radius:50%;background:var(--vision);opacity:0.3;animation:nn-fire 1.5s ease-in-out infinite 0.2s;left:90px;top:8px;"></div>
+            <div style="position:absolute;width:7px;height:7px;border-radius:50%;background:var(--vision);opacity:0.3;animation:nn-fire 1.5s ease-in-out infinite 0.4s;left:90px;top:26px;"></div>
+            <div style="position:absolute;width:7px;height:7px;border-radius:50%;background:var(--vision);opacity:0.3;animation:nn-fire 1.5s ease-in-out infinite 0.6s;left:90px;top:44px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Architecture</span>
+        <h2>System Overview</h2>
+        <p>How the layers connect from sensors to cloud.</p>
+      </div>
+      <div class="arch-diagram reveal">
+        <div class="arch-layer">
+          <div class="layer-label">Perception</div>
+          <div class="layer-items">
+            <div class="layer-item">Camera / LiDAR</div>
+            <div class="layer-item">Depth Sensor</div>
+            <div class="layer-item">IMU / GPS</div>
+          </div>
+        </div>
+        <div class="arch-layer">
+          <div class="layer-label">Edge Compute</div>
+          <div class="layer-items">
+            <div class="layer-item">Jetson / TPU</div>
+            <div class="layer-item">NN Inference</div>
+            <div class="layer-item">SLAM / VIO</div>
+          </div>
+        </div>
+        <div class="arch-layer">
+          <div class="layer-label">Autonomy</div>
+          <div class="layer-items">
+            <div class="layer-item">ROS2 Nodes</div>
+            <div class="layer-item">Path Planner</div>
+            <div class="layer-item">Flight Controller</div>
+          </div>
+        </div>
+        <div class="arch-layer">
+          <div class="layer-label">Cloud</div>
+          <div class="layer-items">
+            <div class="layer-item">Fleet Manager</div>
+            <div class="layer-item">Telemetry DB</div>
+            <div class="layer-item">Mission Control</div>
+          </div>
+        </div>
+      </div>
+      <div class="arch-arrow">&darr; Data Flow &darr;</div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo"><span class="logo-mark" style="width:28px;height:28px;font-size:0.75rem;">FL</span><span>Fluxion Dynamic</span></div>
+        <p>Fluxion Dynamic Technologies Pvt. Ltd. builds autonomous aerial systems and intelligent flight software. Incorporated 9 February 2024. Delhi, India.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Technology</h4>
+        <ul><li><a href="technology.html">C++ / Embedded</a></li><li><a href="technology.html">Java / Backend</a></li><li><a href="technology.html">Python / AI</a></li><li><a href="technology.html">ROS2 / Autonomy</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul><li><a href="about.html">About</a></li><li><a href="solutions.html">Solutions</a></li><li><a href="contact.html">Contact</a></li><li><a href="https://github.com/Fluxion-Dynamic" target="_blank" rel="noopener">GitHub</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul><li><a href="about.html">CIN: U26700DL2024PTC426455</a></li><li><a href="about.html">Private Limited</a></li><li><a href="about.html">Startup India</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2024 Fluxion Dynamic Technologies Pvt. Ltd. All rights reserved. | CIN U26700DL2024PTC426455 | Delhi, India</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  'use strict';
+  const hamburger=document.getElementById('hamburger');
+  const navLinks=document.getElementById('navLinks');
+  hamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('open');
+    const spans=hamburger.querySelectorAll('span');
+    if(navLinks.classList.contains('open')){
+      spans[0].style.transform='rotate(45deg) translate(4px,4px)';
+      spans[1].style.opacity='0';
+      spans[2].style.transform='rotate(-45deg) translate(4px,-4px)';
+    }else{
+      spans[0].style.transform='';
+      spans[1].style.opacity='';
+      spans[2].style.transform='';
+    }
+  });
+  document.querySelectorAll('#navLinks a').forEach(link=>{
+    link.addEventListener('click',()=>{
+      navLinks.classList.remove('open');
+      hamburger.querySelectorAll('span').forEach(s=>s.style.transform=s.style.opacity='');
+    });
+  });
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',function(e){
+      const id=this.getAttribute('href');
+      if(id==='#')return;
+      const el=document.querySelector(id);
+      if(el){e.preventDefault();window.scrollTo({top:el.getBoundingClientRect().top+window.scrollY-64,behavior:'smooth'});}
+    });
+  });
+  const reveals=document.querySelectorAll('.reveal');
+  const obs=new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');}});
+  },{threshold:0.1});
+  reveals.forEach(r=>obs.observe(r));
+})();
+</script>
+<style>
+@keyframes ros-pulse{0%,100%{box-shadow:0 0 0 0 rgba(196,154,90,0.2)}50%{box-shadow:0 0 0 6px rgba(196,154,90,0)}}
+@keyframes nn-fire{0%,100%{opacity:0.2;transform:scale(0.9)}50%{opacity:1;transform:scale(1.2);box-shadow:0 0 6px rgba(158,122,158,0.3)}}
+@keyframes cv-flicker{0%,100%{opacity:0.2}50%{opacity:1}}
+@keyframes scanline-move{0%{top:0}100%{top:100%}}
+@keyframes path-glow{0%,100%{opacity:0.3}50%{opacity:1;box-shadow:0 0 4px rgba(122,158,122,0.3)}}
+</style>
+</body>
+</html>
